@@ -1,0 +1,16 @@
+{
+  "name": "Drive with Gian-Luigi",
+  "short_name": "Gian-Luigi",
+  "description": "Playful bilingual (Portuguese + English) New York State Class D Learner's Permit prep.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#FFFBF2",
+  "theme_color": "#FFFBF2",
+  "icons": [
+    {
+      "src": "./images/characters/gianluigi-happy.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ]
+}

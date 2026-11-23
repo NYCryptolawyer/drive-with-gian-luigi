@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fredoka", ui-rounded, "SF Pro Rounded", system-ui, sans-serif;
+  --font-sans: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --color-cream: #FFFBF2;
+  --color-sand: #EAE2D3;
+  --color-ink: #233044;
+  --color-muted: #5A677B;
+
+  --color-sky-primary: #3B82F6;
+  --color-sky-pastel: #E0EEFF;
+  --color-butter-primary: #F59E0B;
+  --color-butter-pastel: #FEF3C7;
+  --color-coral-primary: #EF6C57;
+  --color-coral-pastel: #FFE8E3;
+  --color-sage-primary: #2E9E6B;
+  --color-sage-pastel: #DCFCE7;
+  --color-lavender-primary: #7C5CFC;
+  --color-lavender-pastel: #EDE9FE;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-cream);
+    color: var(--color-ink);
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+@keyframes gentle-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes sound-wave {
+  0%, 100% {
+    transform: scaleY(0.5);
+  }
+  50% {
+    transform: scaleY(1.15);
+  }
+}
+
+.animate-gentle-float {
+  animation: gentle-float 3.6s ease-in-out infinite;
+}
+
+.animate-sound-wave-1 {
+  animation: sound-wave 0.7s ease-in-out infinite;
+}
+.animate-sound-wave-2 {
+  animation: sound-wave 0.7s ease-in-out 0.18s infinite;
+}
+.animate-sound-wave-3 {
+  animation: sound-wave 0.7s ease-in-out 0.34s infinite;
+}

@@ -1,0 +1,8 @@
+node_modules
+dist
+.env
+.env.local
+.DS_Store
+public/audio/*.wav
+public/audio/audition/
+!public/audio/manifest.json
